@@ -13,7 +13,7 @@ using Android.Support.Design.Widget;
 
 namespace iCodeMobile.Activities
 {
-    [Activity(Label = "Home", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
+    [Activity(Label = "iCode Mobile",LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
     public class MainActivity : BaseActivity
     {
 

@@ -1,9 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <!-- Application -->
+  
   <string name="app_name">Navigation Drawer</string>
   <string name="drawer_open">Open</string>
   <string name="drawer_close">Close</string>
   <string name="menu_refresh">Refresh</string>
   <string name="fragment1">You are on Fragment 1</string>
   <string name="fragment2">You are on Fragment 2</string>
+  
+  <!-- Login -->
+
+  <string name="titleLogin">Bem Vindo ao iCode Mobile</string>
+
+  <string name="subTitleLogin">Digite seu Usuário e Senha para entrar.</string>
+
+  <string name="hintUser">Usuário</string>
+
+  <string name="hintPassword">Senha</string>
+
+  <string name="labelButtonLogin">Entrar</string>
+  
+  
+  
 </resources>

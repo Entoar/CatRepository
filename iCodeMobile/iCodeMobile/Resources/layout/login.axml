@@ -16,7 +16,7 @@
         android:layout_margin="10dp"
         android:layout_gravity="center"
         android:id="@+id/imageView_Login"
-        android:src="@drawable/Icon" />
+        android:src="@drawable/Logo" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,9 +38,9 @@
         android:id="@+id/editText_Password"
         android:hint="@string/hintPassword" />
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/labelButtonLogin"
         android:layout_gravity="center"
-        android:id="@+id/button_Login" />
+        android:id="@+id/button_Login"
+        android:text="@string/labelButtonLogin" />
 </LinearLayout>

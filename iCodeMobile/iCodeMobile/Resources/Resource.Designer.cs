@@ -1862,7 +1862,10 @@ namespace iCodeMobile
 			public const int Icon = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int notification_template_icon_bg = 2130837584;
+			public const int Logo = 2130837584;
+			
+			// aapt resource value: 0x7f020051
+			public const int notification_template_icon_bg = 2130837585;
 			
 			static Drawable()
 			{
@@ -2631,8 +2634,14 @@ namespace iCodeMobile
 			// aapt resource value: 0x7f070021
 			public const int labelButtonLogin = 2131165217;
 			
+			// aapt resource value: 0x7f070025
+			public const int loginInvalid = 2131165221;
+			
 			// aapt resource value: 0x7f07001a
 			public const int menu_refresh = 2131165210;
+			
+			// aapt resource value: 0x7f070023
+			public const int passwordEmpty = 2131165219;
 			
 			// aapt resource value: 0x7f070013
 			public const int status_bar_notification_info_overflow = 2131165203;
@@ -2642,6 +2651,12 @@ namespace iCodeMobile
 			
 			// aapt resource value: 0x7f07001d
 			public const int titleLogin = 2131165213;
+			
+			// aapt resource value: 0x7f070022
+			public const int userEmpty = 2131165218;
+			
+			// aapt resource value: 0x7f070024
+			public const int validating = 2131165220;
 			
 			static String()
 			{

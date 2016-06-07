@@ -1,47 +1,55 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-  <group android:checkableBehavior="single">
-    <item
-        android:id="@+id/nav_home_pdv"
-        android:icon="@drawable/ic_home_pdv"
-        android:title="@string/titleMenuPDV">
-      <menu>
-        <item
-          android:id="@+id/nav_home_pdv_novo_pedido"
-          android:title="@string/titleNovoPedido"/>
-        <item
-            android:id="@+id/nav_home_pdv_listar_pedido"
-            android:title="@string/titleListarPedidos"/>
-      </menu>
 
-    </item>
+  <item android:title="@string/titleMenuPDV">
+    <menu>
+      <item
+          android:id="@+id/nav_home_pdv"
+          android:icon="@drawable/ic_home_pdv"
+          android:title="@string/titleMenuPDV"/>
+      <item
+        android:id="@+id/nav_home_pdv_novo_pedido"
+        android:title="@string/titleNovoPedido"
+        android:icon="@drawable/ic_home_1"/>
+      <item
+        android:id="@+id/nav_home_pdv_listar_pedido"
+        android:title="@string/titleListarPedidos"
+        android:icon="@drawable/ic_home_1"/>
+    </menu>
+  </item>
 
-    <item
+  <item android:title="@string/titleMenuProdutos">
+    <menu>
+      <item
         android:id="@+id/nav_home_prdoutos"
         android:icon="@drawable/ic_home_produtos"
-        android:title="@string/titleMenuProdutos">
-      <menu>
-        <item
-          android:id="@+id/nav_home_produtos_novo_produto"
-          android:title="@string/titleNovoProduto"/>
-        <item
-          android:id="@+id/nav_home_produtos_listar_produto"
-          android:title="@string/titleListarProdutos"/>
-      </menu>
-    </item>
+        android:title="@string/titleMenuProdutos"/>
+      <item
+        android:id="@+id/nav_home_produtos_novo_produto"
+        android:title="@string/titleNovoProduto"
+        android:icon="@drawable/ic_home_1"/>
+      <item
+        android:id="@+id/nav_home_produtos_listar_produto"
+        android:title="@string/titleListarProdutos"
+        android:icon="@drawable/ic_home_1"/>
+    </menu>
+  </item>
 
-    <item
-      android:id="@+id/nav_home_clientes"
-      android:icon="@drawable/ic_home_clientes"
-      android:title="@string/titleMenuClientes">
-      <menu>
-        <item
-          android:id="@+id/nav_home_clientes_novo_cliente"
-          android:title="@string/titleNovoCliente"/>
-        <item
-          android:id="@+id/nav_home_clientes_listar_cliente"
-          android:title="@string/titleListarClientes"/>
-      </menu>
-    </item>
-  </group>
+  <item android:title="@string/titleMenuClientes">
+    <menu>
+      <item
+          android:id="@+id/nav_home_clientes"
+          android:icon="@drawable/ic_home_clientes"
+          android:title="@string/titleMenuClientes"/>
+      <item
+        android:id="@+id/nav_home_clientes_novo_cliente"
+        android:title="@string/titleNovoCliente"
+        android:icon="@drawable/ic_home_1"/>
+      <item
+        android:id="@+id/nav_home_clientes_listar_cliente"
+        android:title="@string/titleListarClientes"
+        android:icon="@drawable/ic_home_1"/>
+    </menu>
+  </item>
+
 </menu>

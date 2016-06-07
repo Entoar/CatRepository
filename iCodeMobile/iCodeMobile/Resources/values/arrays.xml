@@ -3,11 +3,13 @@
   <!--These two sections should match in length
   more icons from:  http://romannurik.github.io/AndroidAssetStudio/-->
   <string-array name="sections">
-    <item>Fragment 1</item>
-    <item>Fragment 2</item>
+    <item>@string/titleMenuPDV</item>
+    <item>@string/titleMenuProdutos</item>
+    <item>@string/titleMenuClientes</item>
   </string-array>
   <string-array name="sections_icons">
-    <item>@drawable/ic_home_1</item>
-    <item>@drawable/ic_home_2</item>
+    <item>@drawable/ic_home_pdv</item>
+    <item>@drawable/ic_home_produtos</item>
+    <item>@drawable/ic_home_clientes</item>
   </string-array>
 </resources>

@@ -14,7 +14,7 @@ using iCodeMobile.WebReference;
 
 namespace iCodeMobile.Activities
 {
-    [Activity(Label = "LoginActivity", MainLauncher = true)]
+    [Activity(Label = "iCode Mobile", MainLauncher = true)]
     public class LoginActivity : Activity
     {
         #region Declaração de Objetos

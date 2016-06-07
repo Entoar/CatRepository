@@ -84,8 +84,15 @@
   <ItemGroup>
     <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
-    <Compile Include="Fragments\Fragment1.cs" />
-    <Compile Include="Fragments\Fragment2.cs" />
+    <Compile Include="Fragments\Clientes\FragmentClientes.cs" />
+    <Compile Include="Fragments\Clientes\FragmentListarClientes.cs" />
+    <Compile Include="Fragments\Clientes\FragmentNovoCliente.cs" />
+    <Compile Include="Fragments\PDV\FragmentListarPedidos.cs" />
+    <Compile Include="Fragments\PDV\FragmentNovoPedido.cs" />
+    <Compile Include="Fragments\PDV\FragmentPDV.cs" />
+    <Compile Include="Fragments\Produtos\FragmentListarProdutos.cs" />
+    <Compile Include="Fragments\Produtos\FragmentNovoProduto.cs" />
+    <Compile Include="Fragments\Produtos\FragmentProdutos.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Activities\BaseActivity.cs" />
@@ -102,13 +109,38 @@
     <AndroidResource Include="Resources\values-v21\styles.xml" />
     <AndroidResource Include="Resources\layout\toolbar.axml" />
     <AndroidResource Include="Resources\values\dimens.xml" />
-    <AndroidResource Include="Resources\layout\fragment1.axml" />
-    <AndroidResource Include="Resources\layout\fragment2.axml" />
     <AndroidResource Include="Resources\layout\main.axml" />
     <AndroidResource Include="Resources\layout\nav_header.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\login.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_pdv.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_pdv_novo_pedido.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_pdv_listar_pedido.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_produtos.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_produtos_novo_produto.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_produtos_listar_produto.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_clientes.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_clientes_novo_cliente.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_clientes_listar_cliente.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <None Include="Web References\WebReference\cliente_fornecedor.datasource">
@@ -156,6 +188,25 @@
     <AndroidResource Include="Resources\drawable-xhdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\ic_menu.png" />
     <AndroidResource Include="Resources\drawable-hdpi\Logo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home_clientes.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home_pdv.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_home_produtos.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Logo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home_clientes.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home_pdv.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_home_produtos.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Logo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_clientes.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_pdv.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_home_produtos.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Logo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_clientes.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_pdv.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_home_produtos.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home_produtos.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Logo.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home_clientes.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_home_pdv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -182,6 +233,11 @@
       <CachedSettingsPropName>
       </CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Activities\Clientes\" />
+    <Folder Include="Activities\PDV\" />
+    <Folder Include="Activities\Produtos\" />
   </ItemGroup>
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -2,31 +2,53 @@
 <resources>
   <!-- Application -->
   
-  <string name="app_name">Navigation Drawer</string>
-  <string name="drawer_open">Open</string>
-  <string name="drawer_close">Close</string>
-  <string name="menu_refresh">Refresh</string>
+  <string name="app_name">iCode Mobile</string>
+  <string name="drawer_open">Abrir</string>
+  <string name="drawer_close">Fechar</string>
+  <string name="menu_refresh">Atualizar</string>
   <string name="fragment1">You are on Fragment 1</string>
   <string name="fragment2">You are on Fragment 2</string>
+  
+  <!-- Menu -->
+
+  <string name="titleMenuPDV">PDV - Pedido de Vendas</string>
+  <string name="titleNovoPedido">Novo Pedido</string>
+  <string name="titleListarPedidos">Listar Pedidos</string>
+
+  <string name="titleMenuProdutos">Produtos</string>
+  <string name="titleNovoProduto">Novo Produto</string>
+  <string name="titleListarProdutos">Listar Produtos</string>
+
+  <string name="titleMenuClientes">Clientes</string>
+  <string name="titleNovoCliente">Novo Cliente</string>
+  <string name="titleListarClientes">Listar Clientes</string>
+  
+  <!-- Fragments -->
+
+  <string name="titleFragmentPDV">PDV - Pedido de Vendas</string>
+  <string name="titleFragmentNovoPedido">Criar Pedido</string>
+  <string name="titleFragmentListarPedidos">Lista de Pedidos</string>
+
+  <string name="titleFragmentProdutos">Produtos</string>
+  <string name="titleFragmentNovoProduto">Cadastro de Produtos</string>
+  <string name="titleFragmentListarProdutos">Lista de Produtos</string>
+  
+  <string name="titleFragmentClientes">Clientes</string>
+  <string name="titleFragmentNovoCliente">Cadastro de Clientes</string>
+  <string name="titleFragmentListarClientes"></string>
   
   <!-- Login -->
 
   <string name="titleLogin">Bem Vindo ao iCode Mobile</string>
-
   <string name="subTitleLogin">Digite seu Usuário e Senha para entrar.</string>
 
   <string name="hintUser">Usuário</string>
-
   <string name="hintPassword">Senha</string>
-
   <string name="labelButtonLogin">Entrar</string>
 
   <string name="userEmpty">O campo Usuário não pode ficar vazio.</string>
-
   <string name="passwordEmpty">O campo Senha não pode ficar vazio.</string>
-
   <string name="validating">Validando...</string>
-  
   <string name="loginInvalid">Usuário ou Senha inválidos.</string>
   
 

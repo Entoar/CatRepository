@@ -30,13 +30,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:id="@+id/editText_User"
-        android:hint="@string/hintUser" />
+        android:hint="@string/hintUser"
+        android:inputType="textEmailAddress" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:id="@+id/editText_Password"
-        android:hint="@string/hintPassword" />
+        android:hint="@string/hintPassword"
+        android:inputType="textWebPassword" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

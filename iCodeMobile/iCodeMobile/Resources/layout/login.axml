@@ -6,7 +6,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:layout_gravity="center"
         android:text="@string/titleLogin"
         android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -40,7 +40,7 @@
         android:hint="@string/hintPassword"
         android:inputType="textWebPassword" />
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/button_Login"

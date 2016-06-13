@@ -35,11 +35,11 @@
   
   <string name="titleFragmentClientes">Clientes</string>
   <string name="titleFragmentNovoCliente">Cadastro de Clientes</string>
-  <string name="titleFragmentListarClientes"></string>
+  <string name="titleFragmentListarClientes">Lista de Clientes</string>
   
   <!-- Login -->
 
-  <string name="titleLogin">Bem Vindo ao iCode Mobile</string>
+  <string name="titleLogin">iCode Mobile</string>
   <string name="subTitleLogin">Digite seu Usuário e Senha para entrar.</string>
 
   <string name="hintUser">Usuário</string>

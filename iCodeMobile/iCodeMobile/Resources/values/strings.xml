@@ -28,10 +28,18 @@
   <string name="titleFragmentPDV">PDV - Pedido de Vendas</string>
   <string name="titleFragmentNovoPedido">Criar Pedido</string>
   <string name="titleFragmentListarPedidos">Lista de Pedidos</string>
-
+  <string name="selectedClient">Cliente Selecionado...</string>
+  <string name="buttonSelectClient">Adicionar Cliente</string>
+  <string name="buttonSelectProduto">Adicionar Produtos</string>
+  <string name="selectedProduto">Selecionar Produtos</string>
+  <string name="buttonFaturarPedido">Faturar</string>
+  <string name="buttonSalvarPedido">Salvar</string>
+  <string name="buttonCancelarPedido">Cancelar</string>
+  
   <string name="titleFragmentProdutos">Produtos</string>
   <string name="titleFragmentNovoProduto">Cadastro de Produtos</string>
   <string name="titleFragmentListarProdutos">Lista de Produtos</string>
+ 
   
   <string name="titleFragmentClientes">Clientes</string>
   <string name="titleFragmentNovoCliente">Cadastro de Clientes</string>

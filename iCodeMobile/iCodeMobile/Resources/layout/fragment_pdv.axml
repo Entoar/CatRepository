@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -10,4 +10,71 @@
         android:layout_margin="10dp"
         android:text="@string/titleFragmentPDV"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView
+        android:minHeight="25dp"
+        android:minWidth="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView_PDV">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/textView_SelectedCliente"
+                android:text="@string/selectedClient" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_SelectClient"
+                android:text="@string/buttonSelectClient" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/selectedProduto" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button_SelectProduto"
+                android:text="@string/buttonSelectProduto" />
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/gv_dados" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="10dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_FaturarPedido"
+                    android:text="@string/buttonFaturarPedido" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_SalvarPedido"
+                    android:text="@string/buttonSalvarPedido" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_CancelarPedido"
+                    android:text="@string/buttonCancelarPedido" />
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
 </LinearLayout>

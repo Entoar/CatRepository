@@ -17,7 +17,7 @@ namespace iCodeMobile.Activities
     [Activity(Label = "iCode Mobile", MainLauncher = true)]
     public class LoginActivity : Activity
     {
-        #region Declaração de Objetos
+        #region Declaração de Componentes
 
         ImageView imageView_Login;
         TextView textView_Login;
@@ -31,7 +31,7 @@ namespace iCodeMobile.Activities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.login);
 
-            #region Definição de Objetos
+            #region Definição de Componentes
 
             imageView_Login = FindViewById<ImageView>(Resource.Id.imageView_Login);
             textView_Login = FindViewById<TextView>(Resource.Id.textView_Login);

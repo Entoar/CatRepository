@@ -3,11 +3,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <SearchView
+        android:id="@+id/sv_teste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="@string/titleFragmentNovoCliente"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:id="@+id/lv_teste" />
 </LinearLayout>

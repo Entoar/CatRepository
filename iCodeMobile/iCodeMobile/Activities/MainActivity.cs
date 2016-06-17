@@ -4,13 +4,12 @@ using Android.OS;
 using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Support.Design.Widget;
-using iCodeMobile.Fragments.Clientes;
-using iCodeMobile.Fragments.PDV;
-using iCodeMobile.Fragments.Produtos;
+using iCodeMobile.Fragments;
+
 
 namespace iCodeMobile.Activities
 {
-    [Activity(Label = "iCode Mobile",LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
+    [Activity(Label = "iCode Mobile", LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/Icon")]
     public class MainActivity : BaseActivity
     {
 
@@ -49,32 +48,6 @@ namespace iCodeMobile.Activities
                     case Resource.Id.nav_home_pdv:
                         ListItemClicked(0);
                         break;
-                    case Resource.Id.nav_home_pdv_novo_pedido:
-                        ListItemClicked(1);
-                        break;
-                    case Resource.Id.nav_home_pdv_listar_pedido:
-                        ListItemClicked(2);
-                        break;
-                    //Produtos
-                    case Resource.Id.nav_home_prdoutos:
-                        ListItemClicked(3);
-                        break;
-                    case Resource.Id.nav_home_produtos_novo_produto:
-                        ListItemClicked(4);
-                        break;
-                    case Resource.Id.nav_home_produtos_listar_produto:
-                        ListItemClicked(5);
-                        break;
-                    //Clientes
-                    case Resource.Id.nav_home_clientes:
-                        ListItemClicked(6);
-                        break;
-                    case Resource.Id.nav_home_clientes_novo_cliente:
-                        ListItemClicked(7);
-                        break;
-                    case Resource.Id.nav_home_clientes_listar_cliente:
-                        ListItemClicked(8);
-                        break;
 
                 }
 
@@ -104,38 +77,11 @@ namespace iCodeMobile.Activities
             Android.Support.V4.App.Fragment fragment = null;
             switch (position)
             {
-                //PDV - Pedido de Vendas
+                //    PDV - Pedido de Vendas
                 case 0:
                     fragment = FragmentPDV.NewInstance();
                     break;
-                case 1:
-                    fragment = FragmentNovoPedido.NewInstance();
-                    break;
-                case 2:
-                    fragment = FragmentListarPedidos.NewInstance();
-                    break;
-                
-                //Produtos
-                case 3:
-                    fragment = FragmentProdutos.NewInstance();
-                    break;
-                case 4:
-                    fragment = FragmentNovoProduto.NewInstance();
-                    break;
-                case 5:
-                    fragment = FragmentListarProdutos.NewInstance();
-                    break;
 
-                //Clientes
-                case 6:
-                    fragment = FragmentClientes.NewInstance();
-                    break;
-                case 7:
-                    fragment = FragmentNovoCliente.NewInstance();
-                    break;
-                case 8:
-                    fragment = FragmentListarClientes.NewInstance();
-                    break;
             }
 
             SupportFragmentManager.BeginTransaction()

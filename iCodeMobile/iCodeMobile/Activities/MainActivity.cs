@@ -4,7 +4,9 @@ using Android.OS;
 using Android.Support.V4.Widget;
 using Android.Views;
 using Android.Support.Design.Widget;
+using Android.Widget;
 using iCodeMobile.Fragments;
+using iCodeMobile.Static;
 
 
 namespace iCodeMobile.Activities
@@ -15,6 +17,7 @@ namespace iCodeMobile.Activities
 
         DrawerLayout drawerLayout;
         NavigationView navigationView;
+        TextView textView_User;
 
         protected override int LayoutResource
         {
@@ -28,7 +31,7 @@ namespace iCodeMobile.Activities
         {
             base.OnCreate(savedInstanceState);
 
-
+            
             drawerLayout = this.FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
 
             //Set hamburger items menu
@@ -91,14 +94,19 @@ namespace iCodeMobile.Activities
 
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
+
+            textView_User = FindViewById<TextView>(Resource.Id.textView_User);
+            textView_User.Text = Session.UsuarioLogado.usuario_id + " - " + Session.UsuarioLogado.usuario_nome;
+
             switch (item.ItemId)
             {
                 case Android.Resource.Id.Home:
                     drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.Start);
                     return true;
             }
+
             return base.OnOptionsItemSelected(item);
-        }
+       }
     }
 }
 

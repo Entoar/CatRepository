@@ -53,11 +53,14 @@
   <string name="hintUser">Usuário</string>
   <string name="hintPassword">Senha</string>
   <string name="labelButtonLogin">Entrar</string>
-
+  
+  <string name="checkBoxLogin">Lembrar senha?</string>
+  
   <string name="userEmpty">O campo Usuário não pode ficar vazio.</string>
   <string name="passwordEmpty">O campo Senha não pode ficar vazio.</string>
   <string name="validating">Validando...</string>
   <string name="loginInvalid">Usuário ou Senha inválidos.</string>
+  
   
 
   

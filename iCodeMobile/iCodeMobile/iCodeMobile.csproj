@@ -84,6 +84,7 @@
   <ItemGroup>
     <Compile Include="Activities\LoginActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Fragments\FragmentListarClientes.cs" />
     <Compile Include="Fragments\FragmentPDV.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

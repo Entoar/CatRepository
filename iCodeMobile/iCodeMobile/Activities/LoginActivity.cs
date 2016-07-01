@@ -10,7 +10,7 @@ using iCodeMobile.WebReference;
 
 namespace iCodeMobile.Activities
 {
-    [Activity(Label = "iCode Mobile", MainLauncher = true)]
+    [Activity(Label = "iCode Mobile", MainLauncher = true, NoHistory = true, Icon = "@drawable/Icon")]
     public class LoginActivity : Activity
     {
         #region Declaração de Componentes

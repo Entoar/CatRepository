@@ -11,13 +11,17 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using FragmentManager = Android.Support.V4.App.FragmentManager;
+using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
 
 namespace iCodeMobile.Fragments
 {
     public class FragmentPDV : Android.Support.V4.App.Fragment
     {
         Button button_SelectClient;
-       
+        FragmentManager FM;
+        FragmentListarClientes FLC = new FragmentListarClientes();
+        TextView textView_clienteSelecionado;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -41,8 +45,16 @@ namespace iCodeMobile.Fragments
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
 
             button_SelectClient = v.FindViewById<Button>(Resource.Id.button_SelectClient);
-            
-            return v;
+
+            textView_clienteSelecionado = v.FindViewById<TextView>(Resource.Id.textView_SelectedCliente);
+            button_SelectClient.Click += delegate(object sender, EventArgs args)
+            {
+                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+                FLC.Show(transaction, "tag");
+
+            };
+
+           return v;
         }
 
     }
